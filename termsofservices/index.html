@@ -326,6 +326,66 @@
     <script src="../home/scripts.js" type="text/javascript"></script>
     <script src="../home/scripts-.js" type="text/javascript"></script>
     <script src="../home/scripts--.js" type="text/javascript"></script>
+    
+    <!-- Custom Mobile Menu Fix -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // Mobile menu toggle functionality
+        $('.header-menu-button').on('click', function() {
+            var $menu = $('.menu');
+            var $nav = $('.menu-content-wrapper');
+            var $shade = $('.menu-bg-shade');
+            var $openIcon = $('.open-menu');
+            var $closeIcon = $('.close-menu');
+            
+            // Toggle menu state
+            if ($menu.hasClass('w--open')) {
+                // Close menu
+                $menu.removeClass('w--open');
+                $nav.hide();
+                $shade.hide();
+                $openIcon.show();
+                $closeIcon.hide();
+                $('body').removeClass('w--nav-menu-open');
+            } else {
+                // Open menu
+                $menu.addClass('w--open');
+                $nav.show();
+                $shade.show();
+                $openIcon.hide();
+                $closeIcon.show();
+                $('body').addClass('w--nav-menu-open');
+            }
+        });
+        
+        // Close menu when clicking on shade/background
+        $('.menu-bg-shade').on('click', function() {
+            $('.header-menu-button').click();
+        });
+        
+        // Close menu when clicking on a menu link
+        $('.menu-link-block').on('click', function() {
+            if ($('.menu').hasClass('w--open')) {
+                $('.header-menu-button').click();
+            }
+        });
+        
+        // Handle escape key
+        $(document).on('keydown', function(e) {
+            if (e.key === 'Escape' && $('.menu').hasClass('w--open')) {
+                $('.header-menu-button').click();
+            }
+        });
+        
+        // Initialize menu state
+        $('.menu-content-wrapper').hide();
+        $('.menu-bg-shade').hide();
+        $('.close-menu').hide();
+        $('.open-menu').show();
+        $('.menu').removeClass('w--open');
+        $('body').removeClass('w--nav-menu-open');
+    });
+    </script>
 </body>
 
 </html>
