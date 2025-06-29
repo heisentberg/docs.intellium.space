@@ -1,0 +1,25 @@
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Optional: Force non-www
+RewriteCond %{HTTP_HOST} ^www\.docs\.intellium\.space [NC]
+RewriteRule ^(.*)$ https://docs.intellium.space/$1 [L,R=301]
+
+# Optional: Set caching for static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# Optional: Set canonical header
+<IfModule mod_headers.c>
+  Header set Link "<https://docs.intellium.space/>; rel='canonical'"
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes
