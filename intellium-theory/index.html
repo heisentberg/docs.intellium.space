@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Intellium Docs | Intellium Theory</title>
+    <meta content="Intellium Theory нь IntelliumGPT-ийн гаргасан магадлалыг зөв тайлж унших теорем юм."
+        name="description" />
+    <meta content="Intellium Docs | Intellium Theory" property="og:title" />
+    <meta content="Intellium Theory нь IntelliumGPT-ийн гаргасан магадлалыг зөв тайлж унших теорем юм."
+        property="og:description" />
+    <meta content="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66edde99ebda80612d49a6a2_Docs-4.jpg"
+        property="og:image" />
+    <meta content="Intellium Docs | Intellium Theory" property="twitter:title" />
+    <meta content="Intellium Theory нь IntelliumGPT-ийн гаргасан магадлалыг зөв тайлж унших теорем юм."
+        property="twitter:description" />
+    <meta content="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66edde99ebda80612d49a6a2_Docs-4.jpg"
+        property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+        href="/intellium-theory/style.css"
+        rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script
+        type="text/javascript">WebFont.load({ google: { families: ["Plus Jakarta Sans:500,600", "DM Mono:500"] } });</script>
+    <script
+        type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+    <link href="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66eb531b7393e02148b4a108_logo.png"
+        rel="shortcut icon" type="image/x-icon" />
+    <link href="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66eb37d9a3dd14353a7d1d4e_logo.png"
+        rel="apple-touch-icon" />
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-font-smoothing: antialiased;
+            -o-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+
+<body class="body-4">
+    <div class="page-content-wrapper">
+        <nav class="menu">
+            <main class="header">
+                <div class="header-logo-and-menu">
+                    <div class="header-menu-button"><img
+                            src="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66ea9c65a1b50f9b062fb235_Menu.svg"
+                            loading="lazy" alt="Menu" class="menu-button-icon open-menu" /><img
+                            src="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66ea9c65a1b50f9b062fb236_Close%20Menu.svg"
+                            loading="lazy" alt="Close" class="menu-button-icon close-menu" /></div>
+                </div><a href="#" class="button secondary header-button w-inline-block">
+                    <div>Go To Website</div><img
+                        src="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66ea9c65a1b50f9b062fb20d_Arrow%20Up%20Right.svg"
+                        loading="lazy" alt="" class="icon-size-12" />
+                </a>
+            </main>
+            <div class="menu-content-wrapper">
+                <div class="menu-content">
+                    <div class="menu-description"><a href="https://docs.intellium.space"
+                            class="link-block w-inline-block"><img
+                                src="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66eaa3d73dbd4ce7b5496606_Docs.png"
+                                loading="lazy" width="60" height="Auto" alt=""
+                                srcset="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66eaa3d73dbd4ce7b5496606_Docs-p-500.png 500w, https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66eaa3d73dbd4ce7b5496606_Docs-p-800.png 800w, https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66eaa3d73dbd4ce7b5496606_Docs-p-1080.png 1080w, https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66eaa3d73dbd4ce7b5496606_Docs-p-1600.png 1600w, https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66eaa3d73dbd4ce7b5496606_Docs-p-2000.png 2000w, https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66eaa3d73dbd4ce7b5496606_Docs.png 2420w"
+                                sizes="60px" class="image-2" /></a></div>
+                    <div class="menu-links-wrapper"><a href="/introduction" class="menu-link-block w-inline-block">
+                            <div class="menu-link-block-text">
+                                <div class="medium-s color-grey-50 width-22">01</div>
+                                <div class="medium-s">Танилцуулга</div>
+                            </div>
+                        </a></div>
+                    <div class="menu-links-wrapper">
+                        <div class="menu-link"><a href="/intelliumgpt" class="menu-link-block w-inline-block">
+                                <div class="menu-link-block-text">
+                                    <div class="medium-s color-grey-50 width-22">02</div>
+                                    <div class="medium-s">IntelliumGPT</div>
+                                </div>
+                            </a></div>
+                        <div class="menu-link"><a href="/intellium-theory" aria-current="page"
+                                class="menu-link-block w-inline-block w--current">
+                                <div class="menu-link-block-text">
+                                    <div class="medium-s color-grey-50 width-22">03</div>
+                                    <div class="medium-s">Intellium Theory</div>
+                                </div>
+                            </a></div>
+                        <div class="menu-link"><a href="/intellium-profit" class="menu-link-block w-inline-block">
+                                <div class="menu-link-block-text">
+                                    <div class="medium-s color-grey-50 width-22">04</div>
+                                    <div class="medium-s">Intellium Profit</div>
+                                </div>
+                            </a></div>
+                        <div class="menu-link"><a href="/intellium-insights" class="menu-link-block w-inline-block">
+                                <div class="menu-link-block-text">
+                                    <div class="medium-s color-grey-50 width-22">05</div>
+                                    <div class="medium-s">Intellium Insighs</div>
+                                </div>
+                            </a></div>
+                        <div class="menu-link"><a href="/sign-up" class="menu-link-block w-inline-block">
+                                <div class="menu-link-block-text">
+                                    <div class="medium-s color-grey-50 width-22">06</div>
+                                    <div class="medium-s">Бүртгүүлэх</div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="menu-links-wrapper"><a href="/contact" class="menu-link-block w-inline-block">
+                            <div class="menu-link-block-text">
+                                <div class="medium-s color-grey-50 width-22">07</div>
+                                <div class="medium-s">Холбогдох</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="menu-button-wrapper"><a href="https://intellium.space/" target="_blank"
+                        class="button secondary w-inline-block">
+                        <div>Вэбсайт руу шилжих</div><img
+                            src="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66ea9c65a1b50f9b062fb20d_Arrow%20Up%20Right.svg"
+                            loading="lazy" alt="" class="icon-size-12" />
+                    </a></div>
+            </div>
+            <div class="menu-bg-shade"></div>
+        </nav>
+        <div class="page-content">
+            <section class="internal-page-hero">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="internal-page-hero-content">
+                        <h1 class="h1 color-white-opacity-50">03</h1>
+                        <h1 class="h1">Intellium Theory</h1>
+                    </div>
+                </div>
+            </section>
+            <section id="lookup" class="section section-paddings section-border-bottom">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="description-block-content-2">
+                        <h2 class="h2-2">Intellium Theory нь IntelliumGPT-ийн гаргасан магадлалыг зөв тайлж унших теорем
+                            юм.</h2>
+                    </div>
+                </div>
+                <div class="w-layout-blockcontainer container w-container"></div>
+            </section>
+            <section id="color-download" class="section section-paddings">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="w-layout-grid two-blocks-content-grid">
+                        <h3 class="h3">Intellium Theory гэж юу вэ?</h3>
+                        <p class="medium-l">Intellium Theory нь математик онолын аргачлалуудыг ашиглан IntelliumGPT-ийн
+                            магадлалыг нарийвчлан шинжилж, ялах магадлалыг мэдэгдэхүйц нэмэгдүүлэх цорын ганц дэвшилтэт
+                            шийдэл юм.<br /></p>
+                    </div>
+                </div>
+                <section id="our-values" class="section section-paddings">
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid">
+                            <h3 class="h3">Хэрхэн ажилладаг вэ?</h3>
+                            <div class="wrapper">
+                                <p class="medium-l margin-bottom-48-mobile-40">Энэхүү технологи нь бооцооны odds-ийн
+                                    нарийвчилсан тооцоололд суурилдаг бөгөөд IntelliumGPT-тэй хослуулснаар Positive EV
+                                    тооцоолж, ялагчийг илүү нарийвчлалтай тодорхойлох боломжийг олгодог.</p>
+                                <div class="list-wrapper">
+                                    <div class="list-item-2">
+                                        <h4 class="h4">+EV<br /></h4>
+                                        <p class="medium-s color-grey-50">Ялах магадлал мэдэгдэхүйц нэмэгдэнэ.</p>
+                                    </div>
+                                    <div class="list-item-2">
+                                        <h4 class="h4">Theory</h4>
+                                        <p class="medium-s color-grey-50">Математик теором ашиглан гүнзгий, дээд түвшний
+                                            анализ хийх боломжтой.</p>
+                                    </div>
+                                    <div class="list-item-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid">
+                            <h3 class="h3">Хэрхэн Intellium Theory-д нэвтрэх вэ?</h3>
+                            <div class="wrapper">
+                                <p class="medium-l margin-bottom-48-mobile-40">Intellium Theory-ийн албан ёсны вэб хаяг
+                                    нь <strong>theory.intellium.space</strong> юм.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="heading">Intellium Theory ашиглах заавар:</h2>
+                    <div style="padding-top:56.17021276595745%" class="video-8 w-video w-embed"><iframe
+                            class="embedly-embed"
+                            src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fi2zmPDMiwhY%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Di2zmPDMiwhY&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fi2zmPDMiwhY%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube"
+                            width="940" height="528" scrolling="no" allowfullscreen
+                            title="Intellium Theory ашиглах заавар"></iframe></div>
+                    <section>
+                        <h2 class="heading">Intellium Theory-д ашиглах томьёо:</h2>
+                        <section id="lookup" class="section section-paddings section-border-bottom">
+                            <div class="w-layout-blockcontainer container w-container">
+                                <div class="description-block-content-2">
+                                    <h2 class="new">Intellium Theory нь US Odds болон IntelliumGPT-ийн таамаглалыг
+                                        хослуулан спортын тоглолтын тоон мэдээлэлд дүн шинжилгээ хийж, хортой
+                                        тоглолтуудыг (Fixed Match) ялган таньж, өдөр бүр тогтвортой ашиг олох боломжийг
+                                        бүрдүүлдэг дэвшилтэт технологи юм.<br /></h2>
+                                </div>
+                            </div>
+                            <div class="w-layout-blockcontainer container w-container"></div>
+                        </section>
+                    </section>
+                    <section>
+                        <h2 class="heading"><strong>Хориглох тоон утгууд:</strong></h2>
+                    </section>
+                    <section id="color-download" class="section section-paddings">
+                        <div class="w-layout-blockcontainer container w-container"></div>
+                        <section id="color">
+                            <div class="w-layout-blockcontainer container w-container">
+                                <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                                    <h3 class="h3">Жишээ 1: Тоон утгын дутагдал (3 болон 4 оронтой тоо):</h3>
+                                    <p id="w-node-_86a328e3-2739-3026-5e17-cac90da2d2d6-062fb1db" class="medium-l">
+                                        +12.35 <br />-1.95 <br /><br />Аль ч тал нь ялах магадлалтай (50%, 50%) гэсэн үг
+                                        тул ийм тоон утгатай тоглолт руу орохыг
+                                        хориглоно.<br /><br />+123.98<br />-65.39<br /><br />Ийм тоон утгатай тоглолт
+                                        руу мөн орж болохгүй.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="color" class="section section-paddings section-border-bottom">
+                            <div class="w-layout-blockcontainer container w-container">
+                                <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                                    <h3 class="h3">Жишээ 2: Хоёр хасахтай тоон утга болон 3 оронтой тоон утга:</h3>
+                                    <p class="medium-l">-1.89<br />-8.52<br /><br />Ийм тоон утга гарсан үед шууд
+                                        алгасах ёстой.<br />‍<br />+3.41<br />-7.45<br /><br />Хоёр хасахгүй байсан ч
+                                        3:3 харьцаатай үед алгасахыг зөвлөе.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="color" class="section section-paddings section-border-bottom">
+                            <div class="w-layout-blockcontainer container w-container">
+                                <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                                    <h3 class="h3">Жишээ 3: Ижил орон давхацсан тоон утга:</h3>
+                                    <p class="medium-l">+12.54<br />-18.74<br /><br />Сүүлийн орон ижил тоо давхацсан
+                                        байна.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="color" class="section section-paddings section-border-bottom">
+                            <div class="w-layout-blockcontainer container w-container">
+                                <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                                    <h3 class="h3">Жишээ 4: Odds-ийн хариу зөрөх:</h3>
+                                    <p class="medium-l">+142, -23.90 <br />-172, +11.54<br /><br />+ болон - тэмдгээрээ
+                                        зөрсөн бол алгасах.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                    <h2 class="heading"><strong class="_2">Бооцоо тавих боломжтой утгууд:<br />‍<br /></strong>Model S
+                        арга барил</h2>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                            <h3 class="h3">Шаардлага:</h3>
+                            <p id="w-node-_4cf4b8d8-2775-e9da-41e3-929258097e0e-062fb1db" class="medium-l">EV буюу
+                                Intellium Theory-гоор бодсон тоон утгуудын эхний орон үржүүлсний дараа аливаа орон 3
+                                буюу түүнээс дээш байвал Model S аргыг ашиглана.</p>
+                        </div>
+                    </div>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                            <h3 class="h3">Жишээ 1:</h3>
+                            <p id="w-node-_42a246e3-1edc-3f1e-2a2a-bad4a0513198-062fb1db" class="medium-l">+35.52 =
+                                7<br />-24.67 = 13</p>
+                        </div>
+                        <div class="w-layout-blockcontainer container w-container">
+                            <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                                <h3 class="h3">Үе шат 1: Нийлбэрийн хоорондох зөрүүг олох:</h3>
+                                <p id="w-node-_979daac5-b52a-ff7c-b3fa-68161712cf26-062fb1db" class="medium-l">13 - 7 =
+                                    6</p>
+                            </div>
+                        </div>
+                        <div class="w-layout-blockcontainer container w-container">
+                            <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                                <h3 class="h3">Үе шат 2: Сүүлийн оронгийн хоорондох зөрүүг олох:</h3>
+                                <p id="w-node-_4193cd65-5103-7cc5-0c71-06c898459087-062fb1db" class="medium-l">7 - 2 = 5
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-layout-blockcontainer container w-container">
+                            <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                                <h3 class="h3">Үе шат 3: Эцсийн хариу:</h3>
+                                <p id="w-node-e34f2b4a-23e9-4b86-bc38-40a9ebb8bb0c-062fb1db" class="medium-l">13 - 5 =
+                                    8<br /><br />8 &gt; 6 тул 13 илүү буюу -24.67 тал ялах боломжтой гэсэн үг.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                        <h3 class="h3">Жишээ 2: Эхний орон ижил + 0-тэй байх тохиолдол:</h3>
+                        <p id="w-node-_62a1bf05-ec3b-dc39-7dd1-3fec8e15fc22-062fb1db" class="medium-l">-42.69 =
+                            15<br />+41.90 = 9</p>
+                    </div>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                            <h3 class="h3">Үе шат 1: Нийлбэрийн хоорондох зөрүүг олох:</h3>
+                            <p id="w-node-f38ba24b-8041-db95-6684-601dd65864d7-062fb1db" class="medium-l">15 - 9 = 6</p>
+                        </div>
+                    </div>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                            <h3 class="h3">Үе шат 2: Сүүлийн оронгийн хоорондох зөрүүг олох:</h3>
+                            <p id="w-node-_2a329754-1f36-58d1-575d-67618aeb373c-062fb1db" class="medium-l">9 - 0 = 9</p>
+                        </div>
+                    </div>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                            <h3 class="h3">Үе шат 3: Эцсийн хариу:</h3>
+                            <p id="w-node-_63a0426c-dac0-8028-8749-8bdecdc52d51-062fb1db" class="medium-l">9 - 9 =
+                                0<br />‍<br />0 &lt; 6 тул бид бага тоог сонгох ёстой байсан боловч нийлбэрийн зөрүүнээс
+                                өндөр гарч чадаагүй учраас 9 буюу +41.90 ялах боломжгүй. <br /><br />Харин
+                                <strong>inverse</strong> буюу эсрэгээр нь 15-ийг сонгох боломжтой(-42.69), гэхдээ маш
+                                өндөр эрсдэлтэй гэдгийг анхаарна уу. Эсрэг сонголт хийх үед оруулсан Odds-уудын эхний
+                                орон 1 байх ёстой. Жишээ нь: +152 / -190.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="heading">Model X арга барил</h2>
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                        <h3 class="h3">Шаардлага:</h3>
+                        <p id="w-node-_6e1245c7-7c12-4487-9e55-e3bc6111c1fe-062fb1db" class="medium-l">EV буюу Intellium
+                            Theory-гоор бодсон тоон утгуудын эхний орон үржүүлсний дараа аливаа орон 1-2-ын хооронд
+                            байвал Model X аргыг ашиглана.</p>
+                    </div>
+                </div>
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                        <h3 class="h3">Жишээ 1:</h3>
+                        <p id="w-node-_231abac6-821f-1366-5018-99b56ac70fa9-062fb1db" class="medium-l">+15.83 =
+                            11<br />-22.31 = 4</p>
+                    </div>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                            <h3 class="h3">Үе шат 1: Нийлбэрийн хоорондох зөрүүг олох:</h3>
+                            <p id="w-node-_231abac6-821f-1366-5018-99b56ac70fb1-062fb1db" class="medium-l">11 - 4 = 7
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                            <h3 class="h3">Үе шат 2: Сүүлийн оронгийн хоорондох зөрүүг олох:</h3>
+                            <p id="w-node-_231abac6-821f-1366-5018-99b56ac70fb7-062fb1db" class="medium-l">3 - 1 = 2</p>
+                        </div>
+                    </div>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                            <h3 class="h3">Үе шат 3: Эцсийн хариу:</h3>
+                            <p id="w-node-_231abac6-821f-1366-5018-99b56ac70fbd-062fb1db" class="medium-l">4 - 2 =
+                                2<br />‍<br />2 &lt; 7 тул 4 буюу -22.31 тал ялах боломжгүй. <br /><br />Харин
+                                <strong>inverse</strong> буюу эсрэгээр нь 11-ийг сонгох боломжтой, гэхдээ маш өндөр
+                                эрсдэлтэй гэдгийг анхаарна уу. Эсрэг сонголт хийх үед оруулсан Odds-уудын эхний орон 1
+                                байх ёстой. Жишээ нь: +152 / -190.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                        <h3 class="h3">Жишээ 2: Эхний орон ижил + 0-тэй байх тохиолдол:</h3>
+                        <p id="w-node-e8aa9e85-332a-79b3-deac-68b5f07a0dc7-062fb1db" class="medium-l">+25.03 =
+                            3<br />-22.18 = 9</p>
+                    </div>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                            <h3 class="h3">Үе шат 1: Нийлбэрийн хоорондох зөрүүг олох:</h3>
+                            <p id="w-node-e8aa9e85-332a-79b3-deac-68b5f07a0dcf-062fb1db" class="medium-l">9 - 3 = 6</p>
+                        </div>
+                    </div>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                            <h3 class="h3">Үе шат 2: Сүүлийн оронгийн хоорондох зөрүүг олох:</h3>
+                            <p id="w-node-e8aa9e85-332a-79b3-deac-68b5f07a0dd5-062fb1db" class="medium-l">8 - 3 = 5</p>
+                        </div>
+                    </div>
+                    <div class="w-layout-blockcontainer container w-container">
+                        <div class="w-layout-grid two-blocks-content-grid margin-bottom-48-mobile-40">
+                            <h3 class="h3">Үе шат 3: Эцсийн хариу:</h3>
+                            <p id="w-node-e8aa9e85-332a-79b3-deac-68b5f07a0ddb-062fb1db" class="medium-l">9 - 5 =
+                                3<br />‍<br />3 &lt; 6 тул 9 буюу -22.18 ялах боломжгүй. <br /><br />Харин
+                                <strong>inverse</strong> буюу эсрэгээр нь 3-ийг сонгох боломжтой, гэхдээ маш өндөр
+                                эрсдэлтэй гэдгийг анхаарна уу. Эсрэг сонголт хийх үед оруулсан Odds-уудын эхний орон 1
+                                байх ёстой. Жишээ нь: +152 / -190.</p>
+                        </div>
+                        <h3 class="_5">Дээрх жишээнүүд нь Intellium Theory-г ашиглан спортын тоглолтуудыг хэрхэн шинжлэх
+                            талаар ойлголт өгч байна. Та энэхүү томьёог зөв ашиглаж, тоон утгууд дээр тулгуурлан эрсдэл
+                            багатайгаар үр ашигтай тоглолтуудыг сонгоорой.</h3>
+                    </div>
+                </div>
+            </section>
+            <div class="navigation-buttons">
+                <div class="w-layout-blockcontainer navigation-buttons-container w-container">
+                    <div class="navigation-buttons-wrapper"><a href="/intelliumgpt"
+                            class="navigation-button w-inline-block">
+                            <div class="navigation-button-content">
+                                <div class="medium-s width-22">02</div>
+                                <div class="medium-s">IntelliumGPT</div>
+                            </div><img
+                                src="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66ea9c65a1b50f9b062fb20b_Arrow%20Left.svg"
+                                loading="lazy" alt="" class="icon-size-16" />
+                        </a>
+                        <div class="navigation-buttons-divider"></div><a href="/intellium-profit"
+                            class="navigation-button w-inline-block">
+                            <div class="navigation-button-content">
+                                <div class="medium-s width-22">04</div>
+                                <div class="medium-s">Intellium Profit</div>
+                            </div><img
+                                src="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66ea9c65a1b50f9b062fb20c_Arrow%20Right.svg"
+                                loading="lazy" alt="" class="icon-size-16" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="footer-content">
+                        <div class="footer-main-info site-info">
+                            <div class="medium-s color-white">Intellium Docs</div>
+                            <div class="medium-s color-grey-50">Version 1.0</div>
+                        </div>
+                        <div class="footer-contact-info">
+                            <div class="footer-contact-block">
+                                <div class="medium-s color-white">Холбоо барих</div><a
+                                    href="mailto:contact@intellium.space?subject=Hello!"
+                                    class="medium-s grey-50-link">contact@intellium.space</a>
+                            </div>
+                            <div class="footer-contact-block"><a href="https://www.instagram.com/intelliums"
+                                    target="_blank" class="medium-s white-link">Instagram</a><a
+                                    href="https://www.youtube.com/@Intelliums" target="_blank"
+                                    class="medium-s white-link">YouTube</a><a href="https://x.com/intelliums"
+                                    target="_blank" class="medium-s white-link">X (Twitter)</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-line"></div>
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="footer-content footer-bottom">
+                        <div class="footer-logo-wrapper"><a href="/" class="footer-logo w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/66ea9c65a1b50f9b062fb191/66eb37d9a3dd14353a7d1d4e_logo.png"
+                                    loading="lazy" alt="" class="footer-logo-image" /></a></div>
+                        <div class="footer-main-info">
+                            <div class="medium-s color-grey-50">© 2025</div><a href="/termsofservices"
+                                class="medium-s white-link">Үйлчилгээний нөхцөл</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66ea9c65a1b50f9b062fb191"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

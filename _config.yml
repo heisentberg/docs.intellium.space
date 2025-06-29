@@ -1,0 +1,64 @@
+# GitHub Pages Jekyll Configuration for Intellium Docs
+
+# Site settings
+title: "Intellium Docs"
+description: "Comprehensive documentation for Intellium products and services"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings  
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include files/folders that start with underscore
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Site configuration
+timezone: Asia/Ulaanbaatar
+encoding: utf-8
+
+# GitHub Pages specific
+github:
+  repository_url: "https://github.com/USER/REPO"
+
+# Custom 404 page
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Enable proper 404 handling
+permalink: pretty
+
+# 404 error page
+404_page: /404.html 
